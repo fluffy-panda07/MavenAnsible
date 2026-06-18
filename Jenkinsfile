@@ -18,7 +18,7 @@ pipeline{
 	 		steps{ sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini' }}
 	 	}
 	 post{
-	 	success{ echo 'Build and deployment succesfull}
+	 	success{ echo 'Build and deployment succesfull'}
 	 	failure{ echo 'build failed'}
 	 	}
 	 	}
